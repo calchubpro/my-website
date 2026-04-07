@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>حاسبة المعدل</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<body>
+
+<div class="top-right">
+  <button onclick="toggleDarkMode()">🌙</button>
+</div>
+
+<!-- 🔹 الحاسبة -->
+<div class="container">
+  <div class="box">
+    <h2>🎓 حاسبة المعدل</h2>
+
+    <p>ادخل درجاتك واضغط احسب</p>
+
+    <input id="g1" placeholder="الدرجة 1"><br>
+    <input id="g2" placeholder="الدرجة 2"><br>
+    <input id="g3" placeholder="الدرجة 3"><br>
+    <input id="g4" placeholder="الدرجة 4"><br>
+    <input id="g5" placeholder="الدرجة 5"><br>
+    <input id="g6" placeholder="الدرجة 6"><br>
+    <input id="g7" placeholder="الدرجة 7"><br>
+    <input id="g8" placeholder="الدرجة 8"><br><br>
+
+    <button onclick="calc()">احسب</button>
+<button onclick="downloadPDF()">تحميل PDF</button>
+    <h2 id="result"></h2>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

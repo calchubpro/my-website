@@ -1,0 +1,143 @@
+body {
+    body {
+  background: #f4f6f9;
+}
+  font-family: Arial;
+  background: #f2f2f2;
+  margin: 0;
+}
+
+/* 🔹 القائمة */
+.top-menu {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+}
+
+.menu-btn {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.dropdown a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.menu-btn:hover .dropdown {
+  display: block;
+}
+
+/* 🔹 الحاسبة بالنص */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 320px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+input {
+  width: 80%;
+  padding: 8px;
+  margin: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.top-right {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+.top-right button {
+  padding: 8px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.dark {
+  background: #121212;
+  color: white;
+}
+
+.dark .box {
+  background: #1e1e1e;
+}
+
+.dark input {
+  background: #333;
+  color: white;
+}
+button:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+}
+#result {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.box {
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+.box {
+  margin-top: 100px;
+}
+body.dark {
+  background: #111;
+  color: white;
+}
+
+body.dark .box {
+  background: #1a1a1a;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.6);
+}
+
+body.dark input {
+  background: #222;
+  color: white;
+  border: 1px solid #444;
+}
+
+body.dark button {
+  background: #333;
+  color: white;
+  border: 1px solid #555;
+}
+
+body.dark button:hover {
+  background: #444;
+}
