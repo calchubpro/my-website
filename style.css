@@ -7,10 +7,9 @@ body {
 
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* بدل center */
-  min-height: 100vh;
+  align-items: center; /* 🔥 رجعناها center */
 
-  padding-top: 60px; /* ينزله شوي بس مو بعيد */
+  min-height: 100vh;
 }
 
 /* 🔹 زر الوضع الليلي */
@@ -38,12 +37,14 @@ body {
 
 .box {
   background: white;
-  padding: 25px;
+  padding: 20px; /* 🔥 قللناه */
   border-radius: 12px;
   width: 90%;
   max-width: 400px;
   text-align: center;
   box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+
+  margin: 0; /* 🔥 مهم جداً */
 }
 
 /* 🔹 الحقول */
@@ -105,13 +106,13 @@ body.dark button:hover {
 /* 📱 الموبايل */
 @media (max-width: 600px) {
   body {
-    padding: 10px;
     align-items: center;
+    padding: 0; /* 🔥 حذفنا الفراغ */
   }
 
   .box {
     width: 100%;
-    padding: 20px;
+    padding: 18px;
   }
 
   input {
