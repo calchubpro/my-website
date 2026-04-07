@@ -7,8 +7,10 @@ body {
 
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start; /* بدل center */
   min-height: 100vh;
+
+  padding-top: 60px; /* ينزله شوي بس مو بعيد */
 }
 
 /* 🔹 زر الوضع الليلي */
