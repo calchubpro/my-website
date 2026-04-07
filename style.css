@@ -1,88 +1,24 @@
+/* 🔹 الأساس */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial;
-    background: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  background: #f2f2f2;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-/* 🔹 القائمة */
-.top-menu {
-  position: fixed;
-  top: 10px;
-  right: 20px;
-}
-
-.menu-btn {
-  background: #007bff;
-  color: white;
-  padding: 10px;
-  border-radius: 6px;
-  cursor: pointer;
-  position: relative;
-}
-
-.dropdown {
-  display: none;
-  position: absolute;
-  top: 40px;
-  right: 0;
-  background: white;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-}
-
-.dropdown a {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  color: black;
-}
-
-.menu-btn:hover .dropdown {
-  display: block;
-}
-
-/* 🔹 الحاسبة بالنص */
-.container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  align-items: flex-start; /* مهم للموبايل */
+  min-height: 100vh;
+  padding-top: 40px;
 }
 
-.box {
-  background: white;
-  padding: 25px;
-  border-radius: 12px;
-  width: 320px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  text-align: center;
-}
-
-input {
-  width: 80%;
-  padding: 8px;
-  margin: 5px;
-}
-
-button {
-  padding: 10px 20px;
-  background: #007bff;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 6px;
-}
+/* 🔹 زر الوضع الليلي */
 .top-right {
   position: fixed;
   top: 10px;
   right: 10px;
 }
+
 .top-right button {
   padding: 8px;
   background: black;
@@ -91,34 +27,55 @@ button {
   border-radius: 6px;
   cursor: pointer;
 }
-.dark {
-  background: #121212;
-  color: white;
+
+/* 🔹 الحاسبة */
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.dark .box {
-  background: #1e1e1e;
+.box {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
 }
 
-.dark input {
-  background: #333;
-  color: white;
+/* 🔹 الحقول */
+input {
+  width: 80%;
+  padding: 8px;
+  margin: 5px;
 }
+
+/* 🔹 الأزرار */
+button {
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
 button:hover {
   opacity: 0.9;
   transform: scale(1.03);
 }
+
+/* 🔹 النتيجة */
 #result {
   margin-top: 15px;
   font-size: 20px;
   font-weight: bold;
 }
-.box {
-  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
-}
-.box {
-  margin-top: 100px;
-}
+
+/* 🌙 الوضع الليلي */
 body.dark {
   background: #111;
   color: white;
@@ -144,10 +101,16 @@ body.dark button {
 body.dark button:hover {
   background: #444;
 }
+
+/* 📱 الموبايل */
 @media (max-width: 600px) {
+  body {
+    padding: 20px;
+    align-items: flex-start;
+  }
+
   .box {
-    width: 90%;
-    margin: 20px auto;
+    width: 100%;
     padding: 20px;
   }
 
@@ -159,20 +122,4 @@ body.dark button:hover {
     width: 100%;
     margin-top: 10px;
   }
-}
-.container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.box {
-    width: 90%;
-    max-width: 400px;
-}
-@media (max-width: 600px) {
-    body {
-        height: auto;
-        padding: 20px;
-    }
 }
