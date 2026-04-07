@@ -141,3 +141,19 @@ body.dark button {
 body.dark button:hover {
   background: #444;
 }
+@media (max-width: 600px) {
+  .box {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
