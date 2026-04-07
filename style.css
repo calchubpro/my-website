@@ -37,21 +37,20 @@ body {
 
 .box {
   background: white;
-  padding: 20px; /* 🔥 قللناه */
+  padding: 25px;
   border-radius: 12px;
-  width: 90%;
-  max-width: 400px;
+  width: 92%; /* 🔥 كان 90 */
+  max-width: 420px; /* 🔥 كان 400 */
   text-align: center;
   box-shadow: 0 5px 20px rgba(0,0,0,0.15);
-
-  margin: 0; /* 🔥 مهم جداً */
 }
+
 
 /* 🔹 الحقول */
 input {
-  width: 80%;
-  padding: 8px;
-  margin: 5px;
+  width: 90%; /* 🔥 بدل 80% */
+  padding: 10px;
+  margin: 6px;
 }
 
 /* 🔹 الأزرار */
