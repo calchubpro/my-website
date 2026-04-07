@@ -7,9 +7,8 @@ body {
 
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* مهم للموبايل */
+  align-items: center;
   min-height: 100vh;
-  padding-top: 40px;
 }
 
 /* 🔹 زر الوضع الليلي */
@@ -41,7 +40,6 @@ body {
   border-radius: 12px;
   width: 90%;
   max-width: 400px;
-  margin: 0 auto;
   text-align: center;
   box-shadow: 0 5px 20px rgba(0,0,0,0.15);
 }
@@ -105,8 +103,8 @@ body.dark button:hover {
 /* 📱 الموبايل */
 @media (max-width: 600px) {
   body {
-    padding: 20px;
-    align-items: flex-start;
+    padding: 10px;
+    align-items: center;
   }
 
   .box {
