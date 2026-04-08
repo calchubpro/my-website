@@ -111,3 +111,22 @@ h2 {
 p {
   font-size: 18px;
 }
+/* 🔥 صفحات من نحن + الخصوصية */
+body {
+  direction: rtl; /* يخلي الكتابة عربية صح */
+  text-align: right; /* يخليها مو عاليسار */
+  font-size: 18px; /* يكبر الخط */
+  line-height: 1.8; /* يريح القراءة */
+}
+
+/* العنوان */
+h1, h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* الفقرة */
+p {
+  font-size: 17px;
+  color: #333;
+}
