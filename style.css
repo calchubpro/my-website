@@ -3,6 +3,11 @@ body {
   margin: 0;
   font-family: Arial;
   background: #f2f2f2;
+
+  font-size: 18px; /* 🔥 خط واضح */
+  line-height: 1.7;
+
+  direction: rtl; /* عربي */
 }
 
 /* 🔹 زر الوضع الليلي */
@@ -29,41 +34,46 @@ body {
   align-items: center;
 }
 
+/* 🔹 البوكس (يشتغل لكل الصفحات) */
 .box {
   background: white;
-  padding: 15px; /* 🔥 قللناه */
+  padding: 18px;
   border-radius: 12px;
   width: 90%;
-  max-width: 380px; /* 🔥 صغرناه */
-  text-align: center;
+  max-width: 420px;
+
+  text-align: center; /* 🔥 بالنص */
+
   box-shadow: 0 5px 20px rgba(0,0,0,0.15);
 }
 
 /* 🔹 العناوين */
 h2 {
-  margin: 8px 0;
-  font-size: 20px;
+  margin: 10px 0;
+  font-size: 24px;
 }
 
+/* 🔹 النص */
 p {
-  margin: 5px 0 10px;
-  font-size: 14px;
+  margin: 8px 0 15px;
+  font-size: 17px;
+  color: #333;
 }
 
 /* 🔹 الحقول */
 input {
   width: 100%;
-  padding: 7px; /* 🔥 أصغر */
-  margin: 3px 0; /* 🔥 أقل */
+  padding: 8px;
+  margin: 4px 0;
   box-sizing: border-box;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 /* 🔹 الأزرار */
 button {
   width: 100%;
-  padding: 8px;
-  margin-top: 8px;
+  padding: 10px;
+  margin-top: 10px;
   background: #007bff;
   color: white;
   border: none;
@@ -77,8 +87,8 @@ button:hover {
 
 /* 🔹 النتيجة */
 #result {
-  margin-top: 10px;
-  font-size: 18px;
+  margin-top: 12px;
+  font-size: 20px;
 }
 
 /* 🌙 الوضع الليلي */
@@ -98,35 +108,4 @@ body.dark input {
 
 body.dark button {
   background: #333;
-}
-body {
-  font-size: 18px;
-  line-height: 1.6;
-}
-
-h2 {
-  font-size: 26px;
-}
-
-p {
-  font-size: 18px;
-}
-/* 🔥 صفحات من نحن + الخصوصية */
-body {
-  direction: rtl; /* يخلي الكتابة عربية صح */
-  text-align: right; /* يخليها مو عاليسار */
-  font-size: 18px; /* يكبر الخط */
-  line-height: 1.8; /* يريح القراءة */
-}
-
-/* العنوان */
-h1, h2 {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-/* الفقرة */
-p {
-  font-size: 17px;
-  color: #333;
 }
