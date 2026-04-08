@@ -1,10 +1,10 @@
-// دالة حساب المعدل
+// 🔹 دالة حساب المعدل
 function calc() {
   let sum = 0;
   let count = 0;
 
   for (let i = 1; i <= 8; i++) {
-    let value = document.getElementById("g" + i).value.trim();
+    const value = document.getElementById("g" + i).value.trim();
 
     if (value !== "" && !isNaN(value)) {
       sum += Number(value);
@@ -13,10 +13,11 @@ function calc() {
   }
 
   if (count === 0) {
-    document.getElementById("result").innerText = "ادخل درجات اولاً";
+    document.getElementById("result").innerText = "ادخل درجات أولاً";
   } else {
-    let avg = sum / count;
-    document.getElementById("result").innerText = "المعدل: " + avg.toFixed(2);
+    const avg = sum / count;
+    document.getElementById("result").innerText =
+      "المعدل: " + avg.toFixed(2);
   }
 }
 
@@ -31,7 +32,7 @@ function downloadPDF() {
   let text = "Grades:\n\n";
 
   for (let i = 1; i <= 8; i++) {
-    let value = document.getElementById("g" + i).value.trim();
+    const value = document.getElementById("g" + i).value.trim();
 
     if (value !== "" && !isNaN(value)) {
       sum += Number(value);
@@ -41,28 +42,34 @@ function downloadPDF() {
   }
 
   if (count === 0) {
-    alert("ادخل درجات اولاً");
+    alert("ادخل درجات أولاً");
     return;
   }
 
-  let avg = sum / count;
-
+  const avg = sum / count;
   text += "\nAverage: " + avg.toFixed(2);
 
   doc.text(text, 10, 10);
   doc.save("result.pdf");
 }
+
+
+// 🌙 الوضع الليلي
 function toggleDarkMode() {
   document.body.classList.toggle("dark");
 }
+
+
+// 📊 دالة حساب النسبة
 function calcPercent() {
   const percent = parseFloat(document.getElementById("percent").value);
   const number = parseFloat(document.getElementById("number").value);
 
   if (!isNaN(percent) && !isNaN(number)) {
     const result = (percent / 100) * number;
+
     document.getElementById("percentResult").innerText =
-      "النتيجة: " + result;
+      "النتيجة: " + result.toFixed(2);
   } else {
     document.getElementById("percentResult").innerText =
       "ادخل أرقام صحيحة";

@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-  <link rel="icon" href="favicon.png">
-  <meta name="google-site-verification" content="s2SQuzwAUgxwTPtadHiPIKyfeav5gEyisj23f8oq6J0" />
   <meta charset="UTF-8">
-  <meta name="description" content="حاسبة المعدل لجميع المراحل الدراسية احسب درجاتك بسهولة وسرعة اونلاين">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>احسب معدلك بسهولة | حاسبة المعدل</title>
 
+  <title>احسب معدلك بسهولة | حاسبة المعدل</title>
+  <meta name="description" content="حاسبة المعدل لجميع المراحل الدراسية احسب درجاتك بسهولة وسرعة اونلاين">
+
+  <!-- أيقونة الموقع -->
+  <link rel="icon" href="favicon.png">
+
+  <!-- توثيق Google -->
+  <meta name="google-site-verification" content="s2SQuzwAUgxwTPtadHiPIKyfeav5gEyisj23f8oq6J0" />
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 
   <!-- Google Analytics -->
@@ -16,17 +22,16 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-FJYK6XLXPM');
   </script>
 
   <!-- مكتبة PDF -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-
 </head>
 
 <body>
 
+<!-- زر الوضع الليلي -->
 <div class="top-right">
   <button onclick="toggleDarkMode()">🌙</button>
 </div>
@@ -34,8 +39,8 @@
 <!-- 🔹 الحاسبة -->
 <div class="container">
   <div class="box">
-    <h2>🎓 حاسبة المعدل</h2>
 
+    <h2>🎓 حاسبة المعدل</h2>
     <p>ادخل درجاتك واضغط احسب</p>
 
     <input id="g1" placeholder="الدرجة 1"><br>
@@ -49,26 +54,38 @@
 
     <button onclick="calc()">احسب</button>
     <button onclick="downloadPDF()">تحميل PDF</button>
-<a href="article1.html">📖 شلون تحسب معدلك؟</a>
+
+    <br><br>
+
+    <a href="article1.html" style="color:blue;">
+      📖 شلون تحسب معدلك؟
+    </a>
+<a href="article2.html">📊 شلون تحسب النسبة؟</a>
+
     <h2 id="result"></h2>
+
     <hr>
 
-<h2>📊 حاسبة النسبة المئوية</h2>
+    <!-- 📊 حاسبة النسبة -->
+    <h2>📊 حاسبة النسبة المئوية</h2>
 
-<input id="percent" placeholder="النسبة %"><br>
-<input id="number" placeholder="الرقم"><br><br>
+    <input id="percent" placeholder="النسبة %"><br>
+    <input id="number" placeholder="الرقم"><br><br>
 
-<button onclick="calcPercent()">احسب النسبة</button>
+    <button onclick="calcPercent()">احسب النسبة</button>
 
-<h2 id="percentResult"></h2>
+    <h2 id="percentResult"></h2>
+
   </div>
 </div>
 
+<!-- الفوتر -->
 <footer style="text-align:center; margin:20px 0; font-size:16px;">
   <a href="about.html">من نحن</a> |
   <a href="privacy.html">سياسة الخصوصية</a>
 </footer>
 
+<!-- JS -->
 <script src="script.js"></script>
 
 </body>
