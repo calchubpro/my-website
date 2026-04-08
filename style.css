@@ -1,23 +1,10 @@
 /* 🔹 الأساس */
 body {
   margin: 0;
-  padding: 0;
   font-family: Arial;
   background: #f2f2f2;
-
-  display: flex;
-  justify-content: center;
-  align-items: center; /* 🔥 رجعناها center */
-
-  min-height: 100vh;
-}
-h2 {
-  margin: 10px 0;
 }
 
-p {
-  margin: 5px 0 15px;
-}
 /* 🔹 زر الوضع الليلي */
 .top-right {
   position: fixed;
@@ -26,7 +13,7 @@ p {
 }
 
 .top-right button {
-  padding: 8px;
+  padding: 6px;
   background: black;
   color: white;
   border: none;
@@ -37,55 +24,61 @@ p {
 /* 🔹 الحاسبة */
 .container {
   min-height: 100vh;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
-  padding-top: 30px; /* 🔥 هذا الحل */
 }
 
 .box {
   background: white;
-  .box {
-  padding: 18px; /* 🔥 كان 25 */
-}
+  padding: 15px; /* 🔥 قللناه */
   border-radius: 12px;
-  width: 92%; /* 🔥 كان 90 */
-  max-width: 420px; /* 🔥 كان 400 */
+  width: 90%;
+  max-width: 380px; /* 🔥 صغرناه */
   text-align: center;
   box-shadow: 0 5px 20px rgba(0,0,0,0.15);
 }
 
+/* 🔹 العناوين */
+h2 {
+  margin: 8px 0;
+  font-size: 20px;
+}
+
+p {
+  margin: 5px 0 10px;
+  font-size: 14px;
+}
 
 /* 🔹 الحقول */
 input {
   width: 100%;
-  padding: 8px; /* 🔥 كان 10 */
-  margin: 4px 0; /* 🔥 كان 6 */
+  padding: 7px; /* 🔥 أصغر */
+  margin: 3px 0; /* 🔥 أقل */
   box-sizing: border-box;
+  font-size: 14px;
 }
 
 /* 🔹 الأزرار */
 button {
-  padding: 10px 20px;
+  width: 100%;
+  padding: 8px;
+  margin-top: 8px;
   background: #007bff;
   color: white;
   border: none;
-  cursor: pointer;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 button:hover {
   opacity: 0.9;
-  transform: scale(1.03);
 }
 
 /* 🔹 النتيجة */
 #result {
-  margin-top: 15px;
-  font-size: 20px;
-  font-weight: bold;
+  margin-top: 10px;
+  font-size: 18px;
 }
 
 /* 🌙 الوضع الليلي */
@@ -96,43 +89,13 @@ body.dark {
 
 body.dark .box {
   background: #1a1a1a;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.6);
 }
 
 body.dark input {
   background: #222;
   color: white;
-  border: 1px solid #444;
 }
 
 body.dark button {
   background: #333;
-  color: white;
-  border: 1px solid #555;
-}
-
-body.dark button:hover {
-  background: #444;
-}
-
-/* 📱 الموبايل */
-@media (max-width: 600px) {
-  body {
-    align-items: center;
-    padding: 0; /* 🔥 حذفنا الفراغ */
-  }
-
-  .box {
-    width: 100%;
-    padding: 18px;
-  }
-
-  input {
-    width: 100%;
-  }
-
-  button {
-    width: 100%;
-    margin-top: 10px;
-  }
 }
