@@ -52,9 +52,10 @@ body {
 
 /* 🔹 الحقول */
 input {
-  width: 90%; /* 🔥 بدل 80% */
+  width: 100%;
   padding: 10px;
-  margin: 6px;
+  margin: 6px 0;
+  box-sizing: border-box; /* 🔥 هذا المهم */
 }
 
 /* 🔹 الأزرار */
