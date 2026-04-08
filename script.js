@@ -55,3 +55,16 @@ function downloadPDF() {
 function toggleDarkMode() {
   document.body.classList.toggle("dark");
 }
+function calcPercent() {
+  const percent = parseFloat(document.getElementById("percent").value);
+  const number = parseFloat(document.getElementById("number").value);
+
+  if (!isNaN(percent) && !isNaN(number)) {
+    const result = (percent / 100) * number;
+    document.getElementById("percentResult").innerText =
+      "النتيجة: " + result;
+  } else {
+    document.getElementById("percentResult").innerText =
+      "ادخل أرقام صحيحة";
+  }
+}
